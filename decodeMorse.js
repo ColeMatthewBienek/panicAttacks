@@ -56,20 +56,23 @@ var MORSE_CODE = {
   '...---...': 'SOS'
 }
 
+// Splits a morse code sentence into an array of individual morse-encoded words
 var getWordList = morseCode => morseCode.trim()
                                         .split('   ')
 
+// Replaces the encoded words with plain-english words
 var decodeWords = morseWords => morseWords.map(decodeWord)
                                           .join(' ')
 
+// Decodes a single word from morse code to plain english
 var decodeWord = codedWord => codedWord.split(' ')
                                        .map(decodeLetter)
                                        .join('')
 
+// Translates a single morse code element to an english character
 var decodeLetter = codedLetter => MORSE_CODE[codedLetter]
 
-
-//controlling function=>will call the others
+// Translates a morse-encoded sentence into plain english
 var decodeMorse = morseCode => decodeWords(getWordList(morseCode))
 
 
