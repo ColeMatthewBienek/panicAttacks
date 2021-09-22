@@ -1,0 +1,57 @@
+* {
+  margin:0;
+  padding:20px;
+  border: 1px;
+  color: black;
+}
+
+.main{
+  background:black;
+}
+
+.header{
+  background:olive;
+}
+
+.location{
+  background:chartreuse;
+}
+
+.middle-stack{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+}
+.cel{
+  background:plum;
+  flex: 1;
+  
+
+}
+
+.desc{
+  background:cornsilk;
+  flex:0 1 100px;
+}
+
+.graphic{
+  background:darkkhaki;
+  flex:0 1 100px;
+}
+
+.fahr{
+  background:dodgerblue;
+  flex:1;
+}
+
+.footer{
+  background:olive;
+}
+
+@media screen and (min-width: 640px){
+  .flex-container {
+    display: flex;
+  }
+}
