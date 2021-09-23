@@ -7,14 +7,25 @@
 
 .main{
   background:black;
+  font-family: "Shadows Into Light", serif;
+  word-wrap:normal;
 }
 
 .header{
-  background:olive;
+  background:linear-gradient(purple, white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7.5vw ;
 }
 
 .location{
-  background:chartreuse;
+  background: lightpink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6vw;
+
 }
 
 .middle-stack{
@@ -25,29 +36,43 @@
 
 }
 .cel{
+  font-size: 7.5vw;
   background:plum;
-  flex: 1;
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
 
 }
 
 .desc{
+  flex: 1;
   background:cornsilk;
-  flex:0 1 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
 }
 
 .graphic{
   background:darkkhaki;
-  flex:0 1 100px;
+  flex:1;
+  max-width: 100%;
+  height:auto;
 }
 
 .fahr{
-  background:dodgerblue;
+  font-size: 7.5vw;
+  background:plum;
   flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer{
-  background:olive;
+  background:linear-gradient(white,purple);
 }
 
 @media screen and (min-width: 640px){

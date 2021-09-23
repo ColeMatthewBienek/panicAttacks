@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
             })
             
             .then ((data)=>{
-                const temperature = data.main.temp;
+                const temperature = Math.round( data.main.temp);
                 const place = data.name;
                 const {description, icon} = data.weather[0];
                 const fahr = Math.round((temperature * 9) / 5 +32);
@@ -35,8 +35,8 @@ window.addEventListener('load', () => {
                 console.log('t', temperature)
                 image.src=iconLoc;
                 loc.textContent=place;
-                tC.textContent=temperature;
-                tF.textContent=fahr;
+                tC.textContent=`${temperature} C`;
+                tF.textContent=`${fahr} F`;
                 des.textContent=description;
             })           
         });
